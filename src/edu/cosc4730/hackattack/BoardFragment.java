@@ -12,6 +12,8 @@ import android.widget.Button;
 
 public class BoardFragment extends Fragment {
 	
+	Button test, prob1, prob2;
+	
 	public BoardFragment() {}
 	
 	@Override
@@ -22,9 +24,10 @@ public class BoardFragment extends Fragment {
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
         Bundle savedInstanceState) {
+		
         View myView = inflater.inflate(R.layout.fragment_board, container, false);
-        // TODO create buttons
-        Button test = (Button) myView.findViewById(R.id.btn_test);
+        
+        test = (Button) myView.findViewById(R.id.btn_test);
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,8 +35,10 @@ public class BoardFragment extends Fragment {
             }
           });
         
-        // TODO add listeners
-        myView.setBackgroundColor(Color.BLUE);
+        prob1 = (Button) myView.findViewById(R.id.btn_prob1);
+        prob2 = (Button) myView.findViewById(R.id.btn_prob2);
+        
+        myView.setBackgroundColor(Color.BLUE); //test
         return myView;
 	}
 	

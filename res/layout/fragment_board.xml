@@ -1,12 +1,139 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
     
      <Button
         android:id="@+id/btn_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="swap" />
+     
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+         
+        <Button 
+            android:id="@+id/btn_prob1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Problem A"
+            android:layout_weight="1" />
+        
+        <Button 
+            android:id="@+id/btn_prob2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Problem B"
+            android:layout_weight="1" />
+         
+     </LinearLayout>
+     
+     <LinearLayout
+     	android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:orientation="horizontal" >
+        
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1" >
+             
+             <Button 
+				android:id="@+id/btn_lnch4pwr"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="4 Power" />
+             
+             <TextView 
+                android:id="@+id/tv_cost4pwr"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Cost 3 Moves"
+				android:layout_weight="1" />
+             
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1" >
+             
+             <Button 
+				android:id="@+id/btn_lnch2pwr"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="2 Power" />
+             
+             <TextView 
+                android:id="@+id/tv_cost2pwr"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Cost 1 Move"
+				android:layout_weight="1" />
+             
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1" >
+             
+             <Button 
+				android:id="@+id/btn_steal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Steal" />
+             
+             <TextView 
+                android:id="@+id/tv_coststeal"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Cost 1 Move"
+				android:layout_weight="1" />
+             
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1" >
+             
+             <TextView 
+                android:id="@+id/tv_playerturn"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Player 1 Turn"
+				android:layout_weight="1" />
+             
+             <TextView 
+                android:id="@+id/tv_movesleft"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="3 Moves Left"
+				android:layout_weight="1" />
+             
+             <TextView 
+                android:id="@+id/tv_player1score"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="P1: 8 ponints"
+				android:layout_weight="1" />
+             
+             <TextView 
+                android:id="@+id/tv_player2score"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="P2: 4 points"
+				android:layout_weight="1" />
+             
+         </LinearLayout>
+         
+     </LinearLayout>"
     
 </LinearLayout>
