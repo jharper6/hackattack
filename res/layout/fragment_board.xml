@@ -13,6 +13,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
+        
+        <edu.cosc4730.hackattack.UnitView
+            android:id="@+id/unitview1"
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        
+        <edu.cosc4730.hackattack.UnitView
+            android:id="@+id/unitview2"
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
          
         <Button 
             android:id="@+id/btn_prob1"
@@ -27,6 +46,25 @@
             android:layout_height="wrap_content"
             android:text="Problem B"
             android:layout_weight="1" />
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <edu.cosc4730.hackattack.UnitView
+            android:id="@+id/unitview3"
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        
+        <edu.cosc4730.hackattack.UnitView
+            android:id="@+id/unitview4"
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
          
      </LinearLayout>
      

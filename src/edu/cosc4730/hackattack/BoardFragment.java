@@ -13,6 +13,7 @@ import android.widget.Button;
 public class BoardFragment extends Fragment {
 	
 	Button test, prob1, prob2;
+	UnitView oppUnitsA, oppUnitsB, playerUnitsA, playerUnitsB;
 	
 	public BoardFragment() {}
 	
@@ -35,8 +36,15 @@ public class BoardFragment extends Fragment {
             }
           });
         
+        /* the buttons that represent the problems */
         prob1 = (Button) myView.findViewById(R.id.btn_prob1);
         prob2 = (Button) myView.findViewById(R.id.btn_prob2);
+        
+        /* the views to which unit bmps are drawn */
+        oppUnitsA = (UnitView) myView.findViewById(R.id.unitview1);
+        oppUnitsB = (UnitView) myView.findViewById(R.id.unitview2);
+        playerUnitsA = (UnitView) myView.findViewById(R.id.unitview3);
+        playerUnitsB = (UnitView) myView.findViewById(R.id.unitview4);
         
         myView.setBackgroundColor(Color.BLUE); //test
         return myView;
@@ -44,10 +52,10 @@ public class BoardFragment extends Fragment {
 	
 	public void swapFrag() {
 		
-		PassFragment passFragment = new PassFragment();
+		ResultFragment resultFragment = new ResultFragment();
 		FragmentTransaction transaction = getFragmentManager().beginTransaction();
 		
-		transaction.replace(R.id.fragment_container, passFragment);
+		transaction.replace(R.id.fragment_container, resultFragment);
 		transaction.addToBackStack(null);
 		
 		transaction.commit();
