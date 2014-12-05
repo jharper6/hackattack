@@ -11,6 +11,8 @@ import android.widget.Button;
 
 public class PassFragment extends Fragment {
 	
+	MainActivity game;
+	
 	public PassFragment() {}
 	
 	@Override
@@ -21,23 +23,25 @@ public class PassFragment extends Fragment {
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
         Bundle savedInstanceState) {
+		
+		game = (MainActivity) getActivity();
         View myView = inflater.inflate(R.layout.fragment_pass, container, false);
-        // TODO create buttons
-        // TODO add listeners
-        myView.setBackgroundColor(Color.RED);
+        
+        /* entering player 2's turn; increment turn integer */
+        game.turn++;
         
         Button btnPass = (Button) myView.findViewById(R.id.btn_continue);
         btnPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              swapFrag();
+            	swapToBoardFrag();
             }
           });
         
         return myView;
 	}
 	
-	public void swapFrag() {
+	public void swapToBoardFrag() {
 		
 		BoardFragment boardFragment = new BoardFragment();
 		FragmentTransaction transaction = getFragmentManager().beginTransaction();

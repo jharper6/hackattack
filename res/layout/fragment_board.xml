@@ -1,19 +1,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-     <Button
-        android:id="@+id/btn_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="swap" />
+    android:orientation="vertical"
+    android:background="@drawable/bg2" >
      
+     <Space
+		android:layout_width="match_parent"
+		android:layout_height="20dp" />
      <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
         
+        <!--   
         <edu.cosc4730.hackattack.UnitView
             android:id="@+id/unitview1"
             android:layout_width="match_parent"
@@ -25,14 +24,61 @@
             android:layout_width="match_parent"
         	android:layout_height="50dp"
         	android:layout_weight="1" />
-         
+        -->
+        
+        <ImageView
+            android:id="@+id/iv_opp_a1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_a2"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_a3"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_a4"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_b1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_b2"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_b3"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_opp_b4"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        
      </LinearLayout>
+     
+     <Space 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
      
      <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
-         
+        
+        <!--   
         <Button 
             android:id="@+id/btn_prob1"
             android:layout_width="match_parent"
@@ -46,14 +92,31 @@
             android:layout_height="wrap_content"
             android:text="Problem B"
             android:layout_weight="1" />
+        -->
+        
+        <ImageView
+            android:id="@+id/iv_server_a"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_server_b"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
          
      </LinearLayout>
+     
+     <Space 
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
      
      <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
         
+        <!--  
         <edu.cosc4730.hackattack.UnitView
             android:id="@+id/unitview3"
             android:layout_width="match_parent"
@@ -65,14 +128,63 @@
             android:layout_width="match_parent"
         	android:layout_height="50dp"
         	android:layout_weight="1" />
-         
+        -->
+        
+        <ImageView
+            android:id="@+id/iv_player_a1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_a2"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_a3"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_a4"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_b1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_b2"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_b3"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/iv_player_b4"
+			android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1" />
      </LinearLayout>
+     
+     <Space
+     	android:layout_width="match_parent"
+     	android:layout_height="19dp" />
      
      <LinearLayout
      	android:layout_width="match_parent"
      	android:layout_height="wrap_content"
      	android:orientation="horizontal" >
         
+         <Space 
+             android:layout_width="12dp"
+             android:layout_height="match_parent"/>
+         
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
@@ -136,6 +248,13 @@
              
          </LinearLayout>
          
+         <Button
+			android:id="@+id/btn_endturn"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:text="End Turn" />
+         
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
@@ -147,6 +266,7 @@
                 android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:text="Player 1 Turn"
+				android:textColor="#717171"
 				android:layout_weight="1" />
              
              <TextView 
@@ -154,6 +274,7 @@
                 android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:text="3 Moves Left"
+				android:textColor="#717171"
 				android:layout_weight="1" />
              
              <TextView 
@@ -161,6 +282,7 @@
                 android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:text="P1: 8 ponints"
+				android:textColor="#717171"
 				android:layout_weight="1" />
              
              <TextView 
@@ -168,10 +290,22 @@
                 android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:text="P2: 4 points"
+				android:textColor="#717171"
 				android:layout_weight="1" />
              
          </LinearLayout>
          
-     </LinearLayout>"
+         <Button
+			android:id="@+id/btn_reset"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:text="New Game" />
+         
+         <Space
+            android:layout_width="13dp"
+            android:layout_height="match_parent" />
+         
+     </LinearLayout>
     
 </LinearLayout>

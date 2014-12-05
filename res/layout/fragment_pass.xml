@@ -2,7 +2,8 @@
     
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/bg3" >
 
     <TextView
         android:id="@+id/textViewP2"
@@ -11,6 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
+        android:textColor="#717171"
         android:text="Player 2&apos;s Turn"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -21,6 +23,7 @@
         android:layout_below="@+id/textViewP2"
         android:layout_centerHorizontal="true"
         android:text="Pass to Player 2"
+        android:textColor="#717171"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
